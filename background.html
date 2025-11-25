@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background</title>
+<style>
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+
+  body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  
+  body {
+    background: linear-gradient(270deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-size: 600% 600%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+ 
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.15;
+    animation: float 20s infinite;
+  }
+
+
+  .hero-container {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 40px;
+    max-width: 800px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(0,0,0,0.25);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    
+  }
+
+  .hero-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+
+  .hero-container img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .hero-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(255,255,255,0.3);
+  }
+
+  .hero-container h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #ffe66d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease;
+  }
+
+  .hero-container h1:hover {
+    transform: scale(1.05) rotate(-2deg);
+  }
+
+  .hero-container p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    opacity: 0.85;
+    line-height: 1.6;
+    transition: opacity 0.3s ease;
+  }
+
+  .hero-container p:hover {
+    opacity: 1;
+  }
+
+</style>
+</head>
+<body>
+
+ 
+  <div class="hero-container">
+    <img src="a.jpg.jpg" alt="Profile Photo">
+    <h1>No Background</h1>
+    <p>• Nonchalant • Aggressive • Gentle</p>
+  </div>
+
+</body>
+</html>

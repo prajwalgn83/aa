@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prajwal Gyawali - Profile</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #91d0db;
+    color: #222;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+    background: #e4b5de3c;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+ .hero img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .hero img:hover { transform: scale(1.05); box-shadow: none; }
+
+
+
+  .fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .fullscreen img {
+    width: 95%;
+    max-width: 700px;
+    border-radius: 12px;
+  }
+
+  #img1:target,
+  #img2:target,
+  #img3:target,
+  #img4:target,
+  #img5:target,
+  #img6:target,
+  #heroimg:target {
+    display: flex;
+  }
+
+
+
+
+  .hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #ff4b1f, #1fddff);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+
+  .info-section {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    color: #000;
+
+  }
+
+  .info-card {
+    background: linear-gradient(135deg, #fffafa, #ffffff);
+    color: #000000;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+    transition: transform 0.3s;
+  }
+
+  .info-card:hover {
+    transform: scale(1.05);
+  }
+
+  .info-card strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.05rem;
+  }
+
+  .gallery-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  
+  }
+
+  .gallery-card {
+    width: 100%;
+    height: 150px;
+    background: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s;
+  }
+
+  .gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+    opacity: 0.5;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  .gallery-card:hover img {
+    transform: scale(1);
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+
+  <div class="hero">
+    <a href="#heroimg"><img src="b.jpg.jpg" alt="Prajwal Gyawali"></a>
+    <h1>Prajwal Gyawali</h1>
+  </div>
+
+  
+  <div class="info-section">
+    <div class="info-card">
+      <strong>Name</strong>
+      Prajwal Gnawali
+    </div>
+    <div class="info-card">
+      <strong>Birthdate</strong>
+      01/03/2008
+    </div>
+    <div class="info-card">
+      <strong>Address</strong>
+      Butwal, Nepal
+    </div>
+    <div class="info-card">
+      <strong>Contact</strong>
+      +977-9866145475
+    </div>
+    <div class="info-card">
+      <strong>Email</strong>
+     lxmgnawali@gmail.com
+    </div>
+    <div class="info-card">
+      <strong>Occupation</strong>
+      Student
+    </div>
+    <div class="info-card">
+      <strong>Profession</strong>
+      Web Designer
+    </div>
+    <div class="info-card">
+      <strong>Skills</strong>
+      HTML, CSS, JavaScript, Graphic Design
+    </div>
+    <div class="info-card">
+      <strong>Interests</strong>
+      Technology, Web Development
+    </div>
+    <div class="info-card">
+      <strong>Hobbies</strong>
+      Gaming, Video Editing
+    </div>
+  </div>
+
+
+  <div class="gallery-section">
+    <a href="#img1" class="gallery-card"><img src="b.jpg.jpg"></a>
+    <a href="#img2" class="gallery-card"><img src="c.jpg.jpg"></a>
+    <a href="#img3" class="gallery-card"><img src="d.jpg.jpg"></a>
+    <a href="#img4" class="gallery-card"><img src="e.jpg.jpg"></a>
+    <a href="#img5" class="gallery-card"><img src="f.jpg.jpg"></a>
+    <a href="#img6" class="gallery-card"><img src="f.jpg.jpg"></a>
+  </div>
+
+
+
+<div id="heroimg" class="fullscreen"><a href="#"><img src="b.jpg.jpg"></a></div>
+<div id="img1" class="fullscreen"><a href="#"><img src="b.jpg.jpg"></a></div>
+<div id="img2" class="fullscreen"><a href="#"><img src="c.jpg.jpg"></a></div>
+<div id="img3" class="fullscreen"><a href="#"><img src="d.jpg.jpg"></a></div>
+<div id="img4" class="fullscreen"><a href="#"><img src="e.jpg.jpg"></a></div>
+<div id="img5" class="fullscreen"><a href="#"><img src="f.jpg.jpg"></a></div>
+<div id="img6" class="fullscreen"><a href="#"><img src="f.jpg.jpg"></a></div>
+
+
+</body>
+</html>
